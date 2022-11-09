@@ -1,34 +1,12 @@
-html, body {
-  margin: 0;
-  padding: 0; }
-
-body {
-  width: 100%;
-  height: 100%;
-  font-family: sans-serif;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
-  background-color: blanchedalmond;
-  background-size: 100%; }
-
-header {
+.logo {
   display: flex;
+  align-items: center; }
+
+.logo img {
   height: 70px;
-  justify-content: space-between;
-  background-color: aquamarine;
-  align-items: center;
-  padding: 10px; }
-
-.titulo {
-  text-align: center;
-  font-family: "Baloo 2";
-  font-size: 40px;
-  color: #d84242;
-  text-shadow: 1px 1px #fff; }
-
-.container-titulo {
-  clear: both; }
+  width: 70px;
+  margin-right: 25px;
+  padding: 25px; }
 
 .botoneraArriba a {
   text-decoration: none;
@@ -59,25 +37,39 @@ header {
   font-weight: 600;
   padding-right: 10px; }
 
-@media (max-width: 700px) {
-  header {
-    flex-direction: column; } }
+.linea {
+  background-color: #298580;
+  width: 100%;
+  border-style: inset;
+  border-width: 0.2em; }
 
-.logo {
-  display: flex;
-  align-items: center; }
+html, body {
+  margin: 0;
+  padding: 0; }
 
-.logo img {
-  height: 50px;
-  margin-right: 10px; }
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../assets/img/pexels-francesco-ungaro-673648.jpg);
+  background-size: 100%; }
 
-.title {
+.contenedor {
+  width: 100%;
+  height: 100%; }
+
+.titulo {
   text-align: center;
+  font-family: "Baloo 2";
   font-size: 40px;
-  color: #6a6a6a;
-  margin-top: 100px;
-  font-weight: 100;
-  font-family: fantasy; }
+  color: #d84242;
+  text-shadow: 1px 1px #fff; }
+
+.container-titulo {
+  clear: both; }
 
 .container {
   width: 90%;
@@ -118,51 +110,46 @@ header {
 .container .card a {
   font-weight: 500;
   text-decoration: none;
-  color: #3498db; }
+  color: #ebeef0; }
 
-.formulario2 {
-  padding: 100px;
-  margin: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  border-radius: 10%; }
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: #6a6a6a;
+  margin-top: 100px;
+  font-weight: 100;
+  font-family: fantasy; }
 
 .medios {
   margin: 200px;
-  margin-bottom: 30px; }
-
-.medios img {
-  width: 60px;
-  height: 60px; }
-
-.linea {
-  background-color: #298580;
-  width: 100%;
-  border-style: inset;
-  border-width: 0.2em; }
+  margin-bottom: 30px;
+  min-width: 250px; }
 
 .facebook {
+  padding: auto;
+  width: 40px;
+  height: 40px; }
+
+.instagram {
+  width: 40px;
+  height: 40px; }
+
+.medios_pago img {
   width: 60px;
   height: 60px; }
 
-.instagram {
+.medios_envio img {
   width: 60px;
   height: 60px; }
 
 ul {
   list-style-type: none; }
 
-.contenedor {
-  width: 100%;
-  height: 100%; }
-
 .medios {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  min-width: 300px; }
 
 .medios_pago {
   padding: 30px;
@@ -184,30 +171,54 @@ ul {
   justify-content: center;
   align-items: center; }
 
+.containerAnimales {
+  display: flex;
+  flex-wrap: wrap; }
+
 .animales {
+  flex: 1;
   height: 400px;
-  width: 400px; }
+  width: 400px;
+  border-radius: 10%;
+  border-style: double; }
 
 .granja {
+  flex-flow: row;
   height: 400px;
-  width: 400px; }
+  width: 400px;
+  border-radius: 10%;
+  border-style: double; }
 
 .encastre {
   height: 400px;
-  width: 400px; }
+  width: 400px;
+  border-radius: 10%;
+  border-style: double; }
 
 .didacticos {
   height: 400px;
-  width: 400px; }
+  width: 400px;
+  border-radius: 10%;
+  border-style: double; }
 
 .letras {
   height: 400px;
-  width: 400px; }
+  width: 400px;
+  border-radius: 10%;
+  border-style: double; }
 
 .numeros {
   height: 400px;
-  width: 400px; }
+  width: 400px;
+  border-radius: 10%;
+  border-style: double; }
 
 .set {
   height: 400px;
-  width: 400px; }
+  width: 400px;
+  border-radius: 10%;
+  border-style: double; }
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column; } }

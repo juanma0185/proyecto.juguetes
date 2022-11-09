@@ -1,0 +1,59 @@
+.medios{
+    margin: 200px;
+    margin-bottom: 30px;
+    min-width: 250px;
+}
+
+
+
+.facebook{
+    padding: auto;
+    width: 40px;
+    height: 40px;
+}
+.instagram{
+    width: 40px;
+    height: 40px;
+}
+.medios_pago img{
+    width: 60px;
+    height: 60px;
+}
+.medios_envio img{
+    width: 60px;
+    height: 60px;
+}
+ul{
+    list-style-type: none;
+}
+
+
+
+
+.medios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-width: 300px;
+}
+.medios_pago{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.medios_envio{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.redes{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contacto{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}

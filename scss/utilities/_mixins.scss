@@ -1,0 +1,8 @@
+@mixin props-flex ($align,$justify,$margin-left,$margin-right) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}
+

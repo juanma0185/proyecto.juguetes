@@ -1,0 +1,46 @@
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 70px;
+    width: 70px;
+    margin-right: 25px;
+    padding: 25px;
+}
+.botoneraArriba a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.botoneraArriba a:hover,
+.botonera a:hover{
+    color: white;
+}
+
+.botonera li{
+    float: left;
+    list-style-type: none;
+    margin-right: 20px;
+    
+}
+.botonera{
+    clear: both;
+    @include props-flex (center,center,auto,auto)
+    
+}
+.botonera a{
+    text-decoration: none;
+    color: $color-texto-primario;
+    font-weight: 600;
+    padding-right: 10px;
+}
+.linea{
+    background-color: rgb(41, 133, 128);
+    width: 100%;
+    border-style: inset;
+    border-width: 0.2em;
+}

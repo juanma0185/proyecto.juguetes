@@ -1,0 +1,19 @@
+.containerAnimales {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animales{
+    flex:1;
+    height: 400px;
+    width: 400px;
+    border-radius: 10%;
+    border-style: double;
+}
+.granja{
+    flex-flow: row;
+    height: 400px;
+    width: 400px;
+    border-radius: 10%;
+    border-style: double;
+}
