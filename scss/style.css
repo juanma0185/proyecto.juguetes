@@ -176,10 +176,6 @@ ul {
   list-style-type: none;
 }
 
-footer {
-  background-color: rgb(133, 130, 130);
-}
-
 .medios {
   display: flex;
   flex-direction: row;
