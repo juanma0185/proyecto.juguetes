@@ -54,7 +54,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
-  background-image: url(../assets/img/pexels-francesco-ungaro-673648.jpg);
+  background-color:bisque;
   background-size: 100%; }
 
 .contenedor {
@@ -171,19 +171,25 @@ ul {
   justify-content: center;
   align-items: center; }
 
+.tituloAnimales {
+  display: block; }
+
 .containerAnimales {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  overflow: auto;
+  flex-direction: row; }
 
 .animales {
-  flex: 1;
   height: 400px;
   width: 400px;
   border-radius: 10%;
   border-style: double; }
 
 .granja {
-  flex-flow: row;
   height: 400px;
   width: 400px;
   border-radius: 10%;
@@ -222,3 +228,68 @@ ul {
 @media (max-width: 700px) {
   header {
     flex-direction: column; } }
+
+@media (max-width: 350px) {
+  header {
+    flex-direction: column; }
+  .medios {
+    flex-direction: column; } }
+
+@media (min-width: 980px) and (max-width: 1200px) {
+  .medios {
+    max-width: 700px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding: 0 35px;
+    margin-top: 10px; } }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .medios {
+    padding: 15px 20px 15px 20px;
+    font-weight: normal;
+    text-align: left;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding-top: 15px;
+    display: none;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding: 0 35px;
+    margin-top: 10px; } }
+
+@media (max-width: 767px) {
+  body {
+    padding-left: 0;
+    padding-right: 0; }
+  .medios {
+    margin-top: 30px;
+    padding: 15px 20px 15px 20px;
+    font-weight: normal;
+    text-align: left;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding-top: 15px;
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-bottom: 30px;
+    padding: 0 35px;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    height: 6em; } }
+
+@media (max-width: 480px) {
+  .tweet_list {
+    height: 10em; } }

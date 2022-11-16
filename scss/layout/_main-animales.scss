@@ -1,17 +1,23 @@
+.tituloAnimales{
+    display: block;
+}
 .containerAnimales {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    overflow: auto;
+    flex-direction: row;
 }
 
 .animales{
-    flex:1;
     height: 400px;
     width: 400px;
     border-radius: 10%;
     border-style: double;
 }
 .granja{
-    flex-flow: row;
     height: 400px;
     width: 400px;
     border-radius: 10%;
